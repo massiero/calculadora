@@ -21,25 +21,26 @@ h1, h2 {
   color: #007bff;
 }
 
-.imc-calculator {
+.calculator {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.imc-calculator label {
+.calculator label {
   margin-bottom: 5px;
 }
 
-.imc-calculator input {
+.calculator input,
+.calculator select {
   padding: 8px;
   margin-bottom: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.imc-calculator button {
+.calculator button {
   padding: 10px 15px;
   background-color: #007bff;
   color: white;
@@ -48,12 +49,52 @@ h1, h2 {
   cursor: pointer;
 }
 
-.imc-calculator button:hover {
+.calculator button:hover {
   background-color: #0056b3;
 }
 
-.imc-result {
+.result {
   margin-top: 20px;
   text-align: center;
   font-weight: bold;
+}
+
+
+.app-description {
+  text-align: center;
+}
+
+.highlight {
+    color: #28a745;
+    font-size: 1.2em;
+}
+
+.food-table-button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.food-table-button:hover {
+    background-color: #1e7e34;
+}
+
+.food-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.food-table th, .food-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.food-table th {
+    background-color: #f2f2f2;
 }
