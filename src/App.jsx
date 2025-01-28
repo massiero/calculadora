@@ -289,8 +289,7 @@ function App() {
                             <th>Alimento</th>
                             <th>Porção</th>
                             <th>Calorias</th>
-                            <th>Porções</th>
-                            <th>Total</th>
+                            <th style={{width: '50px'}}>Porções</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -304,19 +303,19 @@ function App() {
                                         type="number"
                                         value={foodPortions[food]}
                                         onChange={(e) => handlePortionChange(food, e.target.value)}
+                                        style={{width: '50px'}}
                                     />
                                 </td>
-                                <td>{foodPortions[food] * data.calories}</td>
                             </tr>
                         ))}
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colSpan="4" style={{textAlign: 'right', fontWeight: 'bold'}}>Total de Calorias:</td>
+                            <td colSpan="3" style={{textAlign: 'right', fontWeight: 'bold'}}>Total de Calorias:</td>
                             <td>{calculateTotalCalories()}</td>
                         </tr>
                          <tr>
-                            <td colSpan="5" style={{textAlign: 'center'}}>
+                            <td colSpan="4" style={{textAlign: 'center'}}>
                                 <button className="food-table-button" onClick={handleCalculateNutrients}>Calcular Nutrientes</button>
                                 {nutrientResults && (
                                     <div style={{marginTop: '10px'}}>
